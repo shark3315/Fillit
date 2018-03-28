@@ -6,7 +6,7 @@
 /*   By: flecouey <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 12:49:34 by flecouey          #+#    #+#             */
-/*   Updated: 2018/02/28 20:52:56 by flecouey         ###   ########.fr       */
+/*   Updated: 2018/03/27 15:35:52 by lapain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,7 @@ int		ft_check_blocksnb(char **tetrimino)
 		}
 		line++;
 	}
-	return (blocksnb == 4 ? 1 : 0);
+	if(blocksnb != 4)
+		return (0);
+	return(1);
 }
